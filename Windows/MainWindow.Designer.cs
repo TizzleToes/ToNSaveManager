@@ -26,7 +26,8 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             listBoxKeys = new ListBox();
@@ -49,6 +50,7 @@
             splitContainer1 = new SplitContainer();
             btnStats = new Button();
             linkSupport = new Button();
+            notifyIcon = new NotifyIcon(components);
             ctxMenuEntries.SuspendLayout();
             ctxMenuKeys.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -286,6 +288,13 @@
             linkSupport.UseVisualStyleBackColor = false;
             linkSupport.Click += linkSupport_Click;
             // 
+            // notifyIcon
+            // 
+            notifyIcon.Icon = (Icon)resources.GetObject("notifyIcon.Icon");
+            notifyIcon.Text = "ToN Save Manager";
+            notifyIcon.Visible = true;
+            notifyIcon.DoubleClick += notifyIcon_doubleClick;
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -302,6 +311,7 @@
             FormClosing += MainWindow_FormClosing;
             Load += mainWindow_Loaded;
             Shown += mainWindow_Shown;
+            Resize += mainWindow_Resize;
             ctxMenuEntries.ResumeLayout(false);
             ctxMenuKeys.ResumeLayout(false);
             splitContainer1.Panel1.ResumeLayout(false);
@@ -333,5 +343,6 @@
         private ToolStripMenuItem ctxMenuEntriesBackup;
         private Button linkSupport;
         private Button btnStats;
+        private NotifyIcon notifyIcon;
     }
 }

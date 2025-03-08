@@ -89,6 +89,16 @@ namespace ToNSaveManager.Models
         public bool SaveNames { get; set; }
 
         /// <summary>
+        /// Minimize to system tray.
+        /// </summary>
+        public bool MinimizeSystemTray { get; set; }
+
+        /// <summary>
+        /// Start minimised.
+        /// </summary>
+        public bool StartMinimised { get; set; }
+
+        /// <summary>
         /// Save a list of terrors that you survived when saving.
         /// </summary>
         public bool SaveRoundInfo { get; set; } = true;
