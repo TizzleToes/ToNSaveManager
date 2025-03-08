@@ -141,6 +141,11 @@
 	"SETTINGS.SHOWWINLOSE": "Show Save Symbols",
 	"SETTINGS.SHOWWINLOSE.TT": "Entries will show a tag based on the source that triggered the save.\n$$SAVE.TAG_R$$ Respawned.\n$$SAVE.TAG_W$$ Survived.\n$$SAVE.TAG_D$$ Disconnected.\n$$SAVE.TAG_X$$ Load Save Reminder.\n$$SAVE.TAG_L$$ Died. (Unused)",
 
+	"SETTINGS.MINIMIZETOSYSTRAY": "Minimize To Systray",
+	"SETTINGS.MINIMIZETOSYSTRAY.TT": "Minimize to system tray.",
+	"SETTINGS.STARTMINIMIZED": "Start Minimised",
+	"SETTINGS.STARTMINIMIZED.TT": "Minimise on startup.",
+
 	"SETTINGS.GROUP.DISCORD": "Discord Integration",
 	"SETTINGS.DISCORDWEBHOOKENABLED": "Auto Discord Backup (Webhook)",
 	"SETTINGS.DISCORDWEBHOOKENABLED.TT": "Automatically saves your new codes to a Discord channel using a webhook integration.",
